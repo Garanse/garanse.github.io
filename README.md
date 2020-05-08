@@ -1,1 +1,0 @@
-# garanse.github.io
