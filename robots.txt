@@ -1,1 +1,1 @@
-Sitemap: /https://hugolmn.github.io/garanse.github.io/sitemap.xml
+Sitemap: /https://garanse.github.io/sitemap.xml
