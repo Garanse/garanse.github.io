@@ -15,6 +15,6 @@ do
 	done
 	
 	for f in *.JPG
-		do magick convert $f -set filename:name %t %[filename:name].jpg
+		do magick convert $f -set filename:name %t -resize ${folder} -quality 80 ${folder}/%[filename:name].jpg
 	done
 done
