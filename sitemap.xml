@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>/https://garanse.github.io/expositions/expo1/</loc>
+<lastmod>2020-05-20T22:15:26+02:00</lastmod>
+</url>
+<url>
+<loc>/https://garanse.github.io/expositions/expo2/</loc>
+</url>
+<url>
 <loc>/https://garanse.github.io/2019/11/08/folie-des-paaions/</loc>
 <lastmod>2019-11-08T00:00:00+01:00</lastmod>
 </url>
