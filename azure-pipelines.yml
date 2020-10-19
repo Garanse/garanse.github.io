@@ -1,5 +1,5 @@
 trigger:
-- main
+- none
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -10,7 +10,7 @@ variables:
   gh_user_build: garanse
   gh_repo_build: garanse.github.io
   gh_pass: $(gh_pat)
-  gh_email: hugo.le-moine@outlook.fr
+  gh_email: $(gh_email)
   gh_auth_header_raw: $(echo -n "${gh_user_raw}:$(github_pat)" | base64);
   gh_auth_header_build: $(echo -n "${gh_user_build}:$(github_pat)" | base64);
   
@@ -37,13 +37,15 @@ steps:
   workingDirectory: $(Build.StagingDirectory)
   displayName: "[ImageMagick] Installation"
 
-- script: chmod +x source_code/assets/images/generate-images.sh
+- script: |
+    cd source_code/assets/images/
+    chmod -R 777 ./
   workingDirectory: $(Build.StagingDirectory)
   displayName: "[ImageMagick] Allowing to execute generate-images.sh"
 
 - bash: source_code/assets/images/generate-images.sh
-  workingDirectory: $(Build.StagingDirectory)
-  displayName: "Test generate_images"
+  workingDirectory: "$(Build.StagingDirectory)/source_code/assets/images/"
+  displayName: "[ImageMagick] Resizing images"
 
 # Setting up Ruby & Jekyll
 - task: UseRubyVersion@0
