@@ -1,5 +1,5 @@
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -37,15 +37,13 @@ steps:
   workingDirectory: $(Build.StagingDirectory)
   displayName: "[ImageMagick] Installation"
 
-- script: |
-    cd source_code/assets/images/
-    chmod -R 777 ./
+- script: chmod +x source_code/assets/images/generate-images.sh
   workingDirectory: $(Build.StagingDirectory)
   displayName: "[ImageMagick] Allowing to execute generate-images.sh"
 
 - bash: source_code/assets/images/generate-images.sh
   workingDirectory: $(Build.StagingDirectory)
-  displayName: "[ImageMagick] Resizing images"
+  displayName: "Test generate_images"
 
 # Setting up Ruby & Jekyll
 - task: UseRubyVersion@0
