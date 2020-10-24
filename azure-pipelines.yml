@@ -11,8 +11,6 @@ variables:
   gh_repo_build: garanse.github.io
   gh_pass: $(gh_pat)
   gh_email: $(email)
-  gh_auth_header_source_code: $(echo -n "${gh_user_source_code}:$(github_pat)" | base64);
-  gh_auth_header_build: $(echo -n "${gh_user_build}:$(github_pat)" | base64);
   
 steps:
 - checkout: none
@@ -74,7 +72,7 @@ steps:
     git config user.email $(gh_email)
     git config user.name $(gh_user_source_code)
     git add .
-    git commit -m "Resized images"
+    git commit -m "Azure pipeline updated source code"
     git push "https://$(gh_user_source_code):$(gh_pass)@github.com/$(gh_user_source_code)/$(gh_repo_source_code).git" master
   workingDirectory: $(Build.StagingDirectory)
   displayName: '[Git] Push source_code'
