@@ -405,6 +405,9 @@
 <loc>/contact/</loc>
 </url>
 <url>
+<loc>/g&amp;f/</loc>
+</url>
+<url>
 <loc>/presse/</loc>
 </url>
 <url>
@@ -418,9 +421,6 @@
 </url>
 <url>
 <loc>/expositions/</loc>
-</url>
-<url>
-<loc>/g&amp;f/</loc>
 </url>
 <url>
 <loc>/</loc>
@@ -481,6 +481,6 @@
 </url>
 <url>
 <loc>/google0b7e80a8655dfaf7.html</loc>
-<lastmod>2020-10-24T17:24:10+00:00</lastmod>
+<lastmod>2020-10-24T17:29:40+00:00</lastmod>
 </url>
 </urlset>
