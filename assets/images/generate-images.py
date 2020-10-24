@@ -13,10 +13,9 @@ image_list = glob.glob('*.jpg') + glob.glob('*.jpeg') + glob.glob('*.png')
 
 for image in image_list:
     image_name = os.path.basename(image)
-    with Image.open(image_list[0]) as im:
-        for size in [1080, 360, 32]:
+    with Image.open(image) as im:
+        for size in SIZES:
             im.thumbnail(size=(size, size))
             im.save(os.path.join(str(size), image_name), format='JPEG')
-
-for file in image_list:
-    shutil.move(file, os.path.join('fullsize', os.path.basename(file)))
+    shutil.move(image, os.path.join('fullsize', os.path.basename(image)))
+    
