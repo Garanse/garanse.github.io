@@ -27,25 +27,36 @@ steps:
   workingDirectory: $(Build.StagingDirectory)
   displayName: "[Git] Clone Github pages built website repository"
 
-- script: |
-    git clone https://$(gh_pat)@github.com/ImageMagick/ImageMagick.git ImageMagick-7.0.10
-    cd ImageMagick-7.0.10
-    ./configure
-    make
-    sudo make install
-    sudo ldconfig /usr/local/lib
-  workingDirectory: $(Build.StagingDirectory)
-  displayName: "[ImageMagick] Installation"
+#- script: |
+#    git clone https://$(gh_pat)@github.com/ImageMagick/ImageMagick.git ImageMagick-7.0.10
+#    cd ImageMagick-7.0.10
+#    ./configure
+#    make
+#    sudo make install
+#    sudo ldconfig /usr/local/lib
+#  workingDirectory: $(Build.StagingDirectory)
+#  displayName: "[ImageMagick] Installation"
 
-- script: |
-    cd source_code/assets/images/
-    chmod -R 777 ./
-  workingDirectory: $(Build.StagingDirectory)
-  displayName: "[ImageMagick] Allowing to execute generate-images.sh"
+#- script: |
+#    cd source_code/assets/images/
+#    chmod -R 777 ./
+#  workingDirectory: $(Build.StagingDirectory)
+#  displayName: "[ImageMagick] Allowing to execute generate-images.sh"
 
-- bash: source_code/assets/images/generate-images.sh
-  workingDirectory: "$(Build.StagingDirectory)/source_code/assets/images/"
-  displayName: "[ImageMagick] Resizing images"
+#- bash: source_code/assets/images/generate-images.sh
+#  workingDirectory: "$(Build.StagingDirectory)/source_code/assets/images/"
+#  displayName: "[ImageMagick] Resizing images"
+
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.6'
+  
+- script: python -m pip install --upgrade pillow
+  displayName: 'Install tools'
+
+- script: python source_code/assets/images/generate-images.py
+  workingDirectory: $(Build.StagingDirectory)
+  displayName: 'Resizing new images'
 
 # Setting up Ruby & Jekyll
 - task: UseRubyVersion@0
