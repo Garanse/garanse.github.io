@@ -1,17 +1,17 @@
 trigger:
-- none
+- master
 
 pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  gh_user_raw: hugolmn
-  gh_repo_raw: garanse
+  gh_user_source_code: hugolmn
+  gh_repo_source_code: garanse
   gh_user_build: garanse
   gh_repo_build: garanse.github.io
   gh_pass: $(gh_pat)
-  gh_email: $(gh_email)
-  gh_auth_header_raw: $(echo -n "${gh_user_raw}:$(github_pat)" | base64);
+  gh_email: $(email)
+  gh_auth_header_source_code: $(echo -n "${gh_user_source_code}:$(github_pat)" | base64);
   gh_auth_header_build: $(echo -n "${gh_user_build}:$(github_pat)" | base64);
   
 steps:
@@ -19,33 +19,13 @@ steps:
   persistCredentials: false
 
 # Importation of git repositories
-- script: git clone "https://$(gh_pat)@github.com/$(gh_user_raw)/$(gh_repo_raw).git" source_code
+- script: git clone "https://$(gh_pat)@github.com/$(gh_user_source_code)/$(gh_repo_source_code).git" source_code
   workingDirectory: $(Build.StagingDirectory)
   displayName: "[Git] Clone Github pages source code repository"
 
 - script: git clone "https://$(gh_pat)@github.com/$(gh_user_build)/$(gh_repo_build).git" build
   workingDirectory: $(Build.StagingDirectory)
   displayName: "[Git] Clone Github pages built website repository"
-
-#- script: |
-#    git clone https://$(gh_pat)@github.com/ImageMagick/ImageMagick.git ImageMagick-7.0.10
-#    cd ImageMagick-7.0.10
-#    ./configure
-#    make
-#    sudo make install
-#    sudo ldconfig /usr/local/lib
-#  workingDirectory: $(Build.StagingDirectory)
-#  displayName: "[ImageMagick] Installation"
-
-#- script: |
-#    cd source_code/assets/images/
-#    chmod -R 777 ./
-#  workingDirectory: $(Build.StagingDirectory)
-#  displayName: "[ImageMagick] Allowing to execute generate-images.sh"
-
-#- bash: source_code/assets/images/generate-images.sh
-#  workingDirectory: "$(Build.StagingDirectory)/source_code/assets/images/"
-#  displayName: "[ImageMagick] Resizing images"
 
 - task: UsePythonVersion@0
   inputs:
@@ -90,11 +70,21 @@ steps:
   displayName: "[Git] Moving new build to build folder"
 
 - script: |
+    cd source_code
+    git config user.email $(gh_email)
+    git config user.name $(gh_user_source_code)
+    git add .
+    git commit -m "Resized images"
+    git push "https://$(gh_user_source_code):$(gh_pass)@github.com/$(gh_user_source_code)/$(gh_repo_source_code).git" master
+  workingDirectory: $(Build.StagingDirectory)
+  displayName: '[Git] Push source_code'
+
+- script: |
     cd build
     git config user.email $(gh_email)
-    git config user.name $(gh_user_raw)
+    git config user.name $(gh_user_source_code)
     git add .
-    git commit -m "Update"
-    git push "https://$(gh_user_raw):$(gh_pass)@github.com/$(gh_user_build)/$(gh_repo_build).git" master
+    git commit -m "Azure pipeline automatic build"
+    git push "https://$(gh_user_source_code):$(gh_pass)@github.com/$(gh_user_build)/$(gh_repo_build).git" master
   workingDirectory: $(Build.StagingDirectory)
-  displayName: '[Git] Configure User, commit and push'
+  displayName: '[Git] Push new build'
