@@ -6,8 +6,8 @@
 </description>
     <link></link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Oct 2020 11:36:40 +0000</pubDate>
-    <lastBuildDate>Sat, 24 Oct 2020 11:36:40 +0000</lastBuildDate>
+    <pubDate>Sat, 24 Oct 2020 13:36:58 +0000</pubDate>
+    <lastBuildDate>Sat, 24 Oct 2020 13:36:58 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -1397,6 +1397,24 @@
         <category>Noir</category>
         
         <category>Blanc</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>La forme, c'est le fond qui remonte à la surface.</title>
+        <description>&lt;p&gt;&lt;img src=&quot;DSC_0087(2).jpg&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+        <link>/2017/05/20/le-fond-c-est-la-forme/</link>
+        <guid isPermaLink="true">/2017/05/20/le-fond-c-est-la-forme/</guid>
+        
+        <category>Bleu</category>
+        
+        <category>Rouge</category>
+        
+        <category>Orange</category>
         
         
       </item>
