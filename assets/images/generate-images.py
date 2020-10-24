@@ -18,4 +18,5 @@ for image in image_list:
             im.thumbnail(size=(size, size))
             im.save(os.path.join(str(size), image_name), format='JPEG')
     shutil.move(image, os.path.join('fullsize', os.path.basename(image)))
+    print(f'Resized: {os.path.basename(image)}')
     
