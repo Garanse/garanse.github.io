@@ -38,7 +38,7 @@ steps:
 
 # Setting up Ruby & Jekyll
 - task: UseRubyVersion@0
-  displayName: '[Ruby] Use Ruby >= 2.5'
+  displayName: '[Ruby] Use Ruby == 2.7.2'
 
 - script: gem install bundler
   workingDirectory: $(Build.StagingDirectory)
