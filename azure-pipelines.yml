@@ -39,7 +39,7 @@ steps:
 # Setting up Ruby & Jekyll
 - task: UseRubyVersion@0
   inputs:
-    versionSpec: '2.7.2'
+    versionSpec: '2.7.3'
   displayName: '[Ruby] Use Ruby == 2.7'
 
 - script: gem install bundler
