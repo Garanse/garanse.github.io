@@ -6,25 +6,13 @@
 </description>
     <link></link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 May 2022 13:18:07 +0000</pubDate>
-    <lastBuildDate>Wed, 04 May 2022 13:18:07 +0000</lastBuildDate>
+    <pubDate>Wed, 04 May 2022 13:29:05 +0000</pubDate>
+    <lastBuildDate>Wed, 04 May 2022 13:29:05 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title></title>
-        <description>&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 04 May 2022 13:18:07 +0000</pubDate>
-        <link>/2022/05/04/2022-05-04-l-ordre-est-le-plaisir/</link>
-        <guid isPermaLink="true">/2022/05/04/2022-05-04-l-ordre-est-le-plaisir/</guid>
-        
-        
-      </item>
-    
-      <item>
         <title>La seule vérité en fin de compte, c'est de mener une vie passionnée, même si elle se rebelle et vous frappe au visage.</title>
-        <description>&lt;p&gt;&lt;img src=&quot;20220504-81x65.JPG&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;20220504-65x81.JPG&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
@@ -32,6 +20,24 @@
         <guid isPermaLink="true">/2022/05/04/la-seule-verite/</guid>
         
         <category>Marron</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>L'ordre est le plaisir de la raison. Mais le désordre est le délice de l'imagination.</title>
+        <description>&lt;p&gt;&lt;img src=&quot;20220504-60x73.JPG&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
+        <link>/2022/05/04/l-ordre-est-le-plaisir/</link>
+        <guid isPermaLink="true">/2022/05/04/l-ordre-est-le-plaisir/</guid>
+        
+        <category>Jaune</category>
+        
+        <category>Bleu</category>
+        
+        <category>Rouge</category>
         
         
       </item>
