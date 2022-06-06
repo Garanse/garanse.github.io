@@ -6,13 +6,13 @@
 </description>
     <link></link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jun 2022 12:17:33 +0000</pubDate>
-    <lastBuildDate>Mon, 06 Jun 2022 12:17:33 +0000</lastBuildDate>
+    <pubDate>Mon, 06 Jun 2022 13:01:41 +0000</pubDate>
+    <lastBuildDate>Mon, 06 Jun 2022 13:01:41 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Avant, je ne cherchais le bonheur qu'à l'extérieur, je me réfugiais dans l'espoir d'une vie meilleure sans oser changer mon regard sur le monde.</title>
-        <description>&lt;p&gt;&lt;img src=&quot;20220606-6x60.JPG&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;20220606-60x60.JPG&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
@@ -24,6 +24,22 @@
         <category>Noir</category>
         
         <category>Blanc</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>La goutte d’eau séparée de l’océan peut trouver un repos momentané, mais celle qui est dans l’océan ne connaît pas de repos.</title>
+        <description>&lt;p&gt;&lt;img src=&quot;20220606-24x35.JPG&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+        <link>/2022/06/06/la-goutte-d-eau-separee/</link>
+        <guid isPermaLink="true">/2022/06/06/la-goutte-d-eau-separee/</guid>
+        
+        <category>Bleu</category>
+        
+        <category>Orange</category>
         
         
       </item>
@@ -931,22 +947,6 @@
         <category>Orange</category>
         
         <category>Jaune</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>La goutte d’eau séparée de l’océan peut trouver un repos momentané, mais celle qui est dans l’océan ne connaît pas de repos.</title>
-        <description>&lt;p&gt;&lt;img src=&quot;20211026-24x35.JPG&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
-        <link>/2021/10/26/la-goutte-d-eau-separee/</link>
-        <guid isPermaLink="true">/2021/10/26/la-goutte-d-eau-separee/</guid>
-        
-        <category>Bleu</category>
-        
-        <category>Orange</category>
         
         
       </item>
