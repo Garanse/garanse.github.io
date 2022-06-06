@@ -6,8 +6,8 @@
 </description>
     <link></link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jun 2022 13:07:39 +0000</pubDate>
-    <lastBuildDate>Mon, 06 Jun 2022 13:07:39 +0000</lastBuildDate>
+    <pubDate>Mon, 06 Jun 2022 16:15:08 +0000</pubDate>
+    <lastBuildDate>Mon, 06 Jun 2022 16:15:08 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -40,6 +40,20 @@
         <category>Bleu</category>
         
         <category>Orange</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>« Dans le silence et la solitude, on n’entend plus que l’essentiel. »</title>
+        <description>&lt;p&gt;&lt;img src=&quot;20220606-19x24.JPG&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+        <link>/2022/06/06/dans-le-silence-et-la-solitude/</link>
+        <guid isPermaLink="true">/2022/06/06/dans-le-silence-et-la-solitude/</guid>
+        
+        <category>Bleu</category>
         
         
       </item>
