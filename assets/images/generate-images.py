@@ -14,6 +14,7 @@ image_list = [f for f in glob.glob('*') if os.path.splitext(f)[1].lower() in EXT
 
 for image in image_list:
     image_name = os.path.basename(image).split('.')[0]
+    image_name = image_name.upper()
     with Image.open(image) as im:
         # Change format of fullsize image
         im.save(image_name + '.jpg', format='JPEG')
