@@ -23,5 +23,5 @@ for image in image_list:
             resized_im = im.resize((size, int(im.height/im.width * size)))
             resized_im.save(os.path.join(str(size), image_name + '.jpg'), format='JPEG')
     # Move original file into fullsize folder
-    shutil.move(image_name + '.jpg', os.path.join('fullsize', image_name + '.jpg'))
+    shutil.move(image, os.path.join('fullsize', image_name + '.jpg'))
     print(f'Resized: {image_name}')
