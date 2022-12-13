@@ -27,7 +27,7 @@ steps:
 
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '3.6'
+    versionSpec: '3.11'
   
 - script: python -m pip install --upgrade pillow
   displayName: 'Install tools'
@@ -39,8 +39,8 @@ steps:
 # Setting up Ruby & Jekyll
 - task: UseRubyVersion@0
   inputs:
-    versionSpec: '2.7'
-  displayName: '[Ruby] Use Ruby == 2.7'
+    versionSpec: '3.1'
+  displayName: '[Ruby] Use Ruby == 3.1'
 
 - script: gem install bundler
   workingDirectory: $(Build.StagingDirectory)
@@ -48,6 +48,7 @@ steps:
 
 - script: |
     cd source_code
+    bundle update jekyll
     bundle install
   workingDirectory: $(Build.StagingDirectory)
   displayName: "[Jekyll] Install dependencies"
