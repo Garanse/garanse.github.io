@@ -6,8 +6,8 @@
 </description>
     <link></link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 11 Apr 2024 16:31:43 +0000</pubDate>
-    <lastBuildDate>Thu, 11 Apr 2024 16:31:43 +0000</lastBuildDate>
+    <pubDate>Thu, 11 Apr 2024 16:40:45 +0000</pubDate>
+    <lastBuildDate>Thu, 11 Apr 2024 16:40:45 +0000</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -15,7 +15,7 @@
         <description>&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 11 Apr 2024 16:31:43 +0000</pubDate>
+        <pubDate>Thu, 11 Apr 2024 16:40:45 +0000</pubDate>
         <link>/2024/04/11/2023-01-05-il-faut-apprendre-a-rester-serein/</link>
         <guid isPermaLink="true">/2024/04/11/2023-01-05-il-faut-apprendre-a-rester-serein/</guid>
         
@@ -23,62 +23,15 @@
       </item>
     
       <item>
-        <title>Lorsque Nous Remplissons</title>
-        <description>&lt;h2 id=&quot;-head&quot;&gt;«««&amp;lt; HEAD&lt;/h2&gt;
-&lt;p&gt;layout: painting
-title: “Lorsque nous remplissons notre tête de bonnes choses, les mauvaises n’ont pas la place d’y rentrer.” 
-title_author: Joyce Meyer                                                   &lt;br /&gt;
-date: 2024-03-20
-technique: Huile sur toile 
-dimensions: 60x73
-price: 750
-image: 20240320-60x73.JPG 
-author: Garanse
-tags:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Bleu&lt;/li&gt;
-&lt;/ul&gt;
+        <title>Lorsque nous remplissons notre tête de bonnes choses, les mauvaises n&apos;ont pas la place d&apos;y rentrer.</title>
+        <description>&lt;p&gt;&lt;img src=&quot;20240320-60x73.JPG&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2&gt;=======&lt;/h2&gt;
-&lt;p&gt;layout: painting
-title: “Lorsque nous remplissons notre tête de bonnes choses, les mauvaises n’ont pas la place d’y rentrer.” 
-title_author: Joyce Meyer                                                   &lt;br /&gt;
-date: 2024-03-20
-technique: Huile sur toile 
-dimensions: 60x73
-price: 750
-image: 20240320-60x73.JPG 
-author: Garanse
-tags:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Bleu&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;blockquote&gt;
-        &lt;blockquote&gt;
-          &lt;blockquote&gt;
-            &lt;blockquote&gt;
-              &lt;p&gt;1c34878f9a700216f85b9ce544afa0599e4cf6a2&lt;/p&gt;
-            &lt;/blockquote&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
 </description>
         <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
         <link>/2024/03/20/lorsque-nous-remplissons/</link>
         <guid isPermaLink="true">/2024/03/20/lorsque-nous-remplissons/</guid>
+        
+        <category>Bleu</category>
         
         
       </item>
