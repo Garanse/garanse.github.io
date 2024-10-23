@@ -16,11 +16,13 @@ for image in image_list:
     image_name = os.path.basename(image).split('.')[0]
     image_name = image_name.upper()
     with Image.open(image) as im:
+        # Convert to RGB when needed
+        rgb_im = im.convert('RGB')
         # Change format of fullsize image
-        im.save(image_name + '.jpg', format='JPEG')
+        rgb_im.save(image_name + '.jpg', format='JPEG')
         # Create resized versions
         for size in SIZES:
-            resized_im = im.resize((size, int(im.height/im.width * size)))
+            resized_im = rgb_im.resize((size, int(rgb_im.height/rgb_im.width * size)))
             resized_im.save(os.path.join(str(size), image_name + '.jpg'), format='JPEG')
     # Move original file into fullsize folder
     shutil.move(image, os.path.join('fullsize', image_name + '.jpg'))
