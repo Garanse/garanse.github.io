@@ -39,8 +39,8 @@ steps:
 # Setting up Ruby & Jekyll
 - task: UseRubyVersion@0
   inputs:
-    versionSpec: '3.1'
-  displayName: '[Ruby] Use Ruby == 3.1'
+    versionSpec: '3.3'
+  displayName: '[Ruby] Use Ruby == 3.3'
 
 - script: gem install bundler
   workingDirectory: $(Build.StagingDirectory)
